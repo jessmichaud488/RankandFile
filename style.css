@@ -1,0 +1,156 @@
+html {
+  background: url("https://i1.wp.com/browncoatball.com/2018/wp-content/uploads/2018/05/washington-dc-capitol-dusk.jpg?fit=810%2C541") no-repeat center center fixed;
+  -webkit-background-size: cover; 
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  text-align: center;
+}
+
+main {
+  text-align: center;
+}
+
+header p.api-info {
+    color: rgba(70, 130, 180);
+    font-size: 18px;
+}
+
+header {
+    font-family: 'Noto Serif SC', serif;
+    color: rgba(114, 114, 114);
+    background-color: rgba(255, 255, 255, 0.7);
+    display: inline-block;
+    padding: 0px;
+    margin-left: 10px;
+    font-weight: bold;
+    border-radius: 10px;
+    text-align: center;
+    border-bottom: 2px rgba(192, 132, 1) solid;
+    border-right: 2px rgba(192, 132, 1) solid; 
+}
+
+.dropdown {
+  text-align: center;
+  margin-top: 50px;
+}
+
+#state-select {
+  height: 55px;
+  width: 250px;
+  border-radius: 5px;
+  margin-top: 50px;
+}
+
+#pick-rep {
+    font-family: 'Noto Serif SC', serif;
+    color: rgba(114, 114, 114);
+    background-color: rgba(255, 255, 255, 0.7);
+    display: inline-block;
+    padding: 0px;
+    margin-top: 10px;
+    font-weight: bold;
+    border-radius: 10px;
+    width: 80%;
+    text-align: center;
+    border-bottom: 2px rgba(192, 132, 1) solid;
+    border-right: 2px rgba(192, 132, 1) solid; 
+}
+
+ul {
+    list-style-type: none;
+}
+
+#pol-image {
+    width: 200px;
+    text-align: center;
+    display: inline-block;
+}
+
+#contact-info {
+  text-align: center;
+}
+
+#rep-results-section {
+    font-family: 'Noto Serif SC', serif;
+    color: rgba(114, 114, 114);
+    background-color: rgba(255, 255, 255, 0.7);
+    display: inline-block;
+    padding: 0px;
+    margin-top: 10px;
+    font-weight: bold;
+    border-radius: 10px;
+    width: 80%;
+    text-align: center;
+    border-bottom: 2px rgba(192, 132, 1) solid;
+    border-right: 2px rgba(192, 132, 1) solid; 
+}
+
+.newsfeed-header{
+    font-family: 'Noto Serif SC', serif;
+    color: rgba(114, 114, 114);
+    background-color: rgba(255, 255, 255, 0.7);
+    display: inline-block;
+    font-weight: bold;
+    margin-top: 10px;
+    width: 80%;
+    border-radius: 10px;
+    text-align: center;
+    border-bottom: 2px rgba(192, 132, 1) solid;
+    border-right: 2px rgba(192, 132, 1) solid; 
+}
+
+#news-results-section {
+    font-family: 'Noto Serif SC', serif;
+    color: rgba(114, 114, 114);
+    background-color: rgba(255, 255, 255, 0.0);
+    display: inline-block;
+    font-weight: bold;
+    margin-top: 10px;
+    width: 90%;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.news-logo {
+  margin: 10px;
+  height: 50px;
+  width: 50px;
+}
+
+#rep-state-search {
+    height: 55px;
+    width: 100px;
+    background: #eee;
+    border: 0px;
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-right: 5px;
+    box-shadow: 0 0 5px black;
+    font-size: 20px;
+}
+
+
+#reset {
+    height: 55px;
+    width: 100px;
+    background: #eee;
+    border: 0px;
+    border-radius: 5px;
+    margin-top: 200px;
+    box-shadow: 0 0 5px black;
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 75px;
+}
+
+.icon {
+  height: 35px;
+  width: 35px;
+}
+
+.footer {
+  font-family: 'Noto Serif SC', serif;
+  color: #eee;
+  font-weight: bold;
+}
