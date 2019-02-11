@@ -10,7 +10,7 @@ The user of this app will be able to view the contact information, leadership ro
 
 LIVE SOURCE
 
-You can locate the app at: https://github.com/jessmichaud488/Rank-and-File-API.git
+You can locate the app at: https://github.com/jessmichaud488/jessmichaud488.github.io.git
 
 TECHNICAL
 
