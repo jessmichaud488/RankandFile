@@ -10,7 +10,7 @@ The user of this app will be able to view the contact information, leadership ro
 
 LIVE SOURCE
 
-You can locate the app at: https://jessmichaud488.github.io-RankandFile/
+You can locate the app at: https://jessmichaud488.github.io/RankandFile/
 
 TECHNICAL
 
