@@ -12,53 +12,68 @@ main {
 }
 
 header p.api-info {
-    color: rgba(70, 130, 180);
+    color: rgb(70, 130, 180);
     font-size: 18px;
 }
 
 header {
     font-family: 'Noto Serif SC', serif;
-    color: rgba(114, 114, 114);
-    background-color: rgba(255, 255, 255, 0.7);
+    color: rgb(114, 114, 114);
+    background-color: rgb(255, 255, 255, 0.8);
     display: inline-block;
-    padding: 0px;
+    padding: 50px;
     margin-left: 10px;
     font-weight: bold;
     border-radius: 10px;
     text-align: center;
-    border-bottom: 2px rgba(192, 132, 1) solid;
-    border-right: 2px rgba(192, 132, 1) solid; 
+    border-bottom: 2px rgb(207, 166, 4) solid;
+    border-right: 2px rgb(207, 166, 4) solid; 
+    box-shadow: 0 0 5px rgb(207, 166, 4);
 }
 
 .dropdown {
   text-align: center;
-  margin-top: 50px;
+  margin: 50px;
 }
 
 #state-select {
+  font-family: 'Noto Serif SC', serif;
+  font-weight: bold;
+  color: rgb(114, 114, 114);
   height: 55px;
-  width: 250px;
+  width: 350px;
   border-radius: 5px;
-  margin-top: 50px;
+  margin: 50px;
+  box-shadow: 0 0 5px black;
 }
 
 #pick-rep {
     font-family: 'Noto Serif SC', serif;
-    color: rgba(114, 114, 114);
-    background-color: rgba(255, 255, 255, 0.7);
+    color: rgb(114, 114, 114);
+    background-color: rgb(255, 255, 255, 0.8);
+    text-align: center;
     display: inline-block;
-    padding: 0px;
-    margin-top: 10px;
+    padding: 50px;
+    margin: 10px 50px 50px 50px;
     font-weight: bold;
     border-radius: 10px;
     width: 80%;
-    text-align: center;
-    border-bottom: 2px rgba(192, 132, 1) solid;
-    border-right: 2px rgba(192, 132, 1) solid; 
+    border-bottom: 2px rgb(207, 166, 4) solid;
+    border-right: 2px rgb(207, 166, 4) solid;
+    box-shadow: 0 0 5px rgb(207, 166, 4);
 }
 
 ul {
-    list-style-type: none;
+  list-style-type: none;
+  text-decoration: none;
+}
+
+a {
+  list-style-type: none;
+  text-decoration: none;
+  font-family: 'Noto Serif SC', serif;
+  color: rgb(70, 130, 180);
+  font-weight: bold;
 }
 
 #pol-image {
@@ -73,40 +88,45 @@ ul {
 
 #rep-results-section {
     font-family: 'Noto Serif SC', serif;
-    color: rgba(114, 114, 114);
-    background-color: rgba(255, 255, 255, 0.7);
+    color: rgb(114, 114, 114);
+    background-color: rgb(255, 255, 255, 0.8);
     display: inline-block;
-    padding: 0px;
+    padding: 50px;
     margin-top: 10px;
     font-weight: bold;
     border-radius: 10px;
     width: 80%;
     text-align: center;
-    border-bottom: 2px rgba(192, 132, 1) solid;
-    border-right: 2px rgba(192, 132, 1) solid; 
+    border-bottom: 2px rgb(207, 166, 4) solid;
+    border-right: 2px rgb(207, 166, 4) solid;
+    box-shadow: 0 0 5px rgb(207, 166, 4);
 }
 
 .newsfeed-header{
     font-family: 'Noto Serif SC', serif;
-    color: rgba(114, 114, 114);
-    background-color: rgba(255, 255, 255, 0.7);
+    color: rgb(114, 114, 114);
+    background-color: rgb(255, 255, 255, 0.8);
     display: inline-block;
     font-weight: bold;
+    padding: 50px;
     margin-top: 10px;
     width: 80%;
     border-radius: 10px;
     text-align: center;
-    border-bottom: 2px rgba(192, 132, 1) solid;
-    border-right: 2px rgba(192, 132, 1) solid; 
+    border-bottom: 2px rgb(207, 166, 4) solid;
+    border-right: 2px rgb(207, 166, 4) solid;
+    box-shadow: 0 0 5px rgb(207, 166, 4); 
 }
 
 #news-results-section {
     font-family: 'Noto Serif SC', serif;
-    color: rgba(114, 114, 114);
-    background-color: rgba(255, 255, 255, 0.0);
+    color: rgb(114, 114, 114);
+    background-color: rgb(255, 255, 255, 0.0);
     display: inline-block;
+    padding: 50px;
     font-weight: bold;
     margin-top: 10px;
+    margin-bottom: 50px;
     width: 90%;
     border-radius: 10px;
     text-align: center;
@@ -119,28 +139,34 @@ ul {
 }
 
 #rep-state-search {
+    font-family: 'Noto Serif SC', serif;
+    font-size: 18px;
     height: 55px;
     width: 100px;
+    color: rgb(114, 114, 114);
+    font-weight: bold;
     background: #eee;
     border: 0px;
     border-radius: 5px;
     margin-top: 10px;
     margin-right: 5px;
     box-shadow: 0 0 5px black;
-    font-size: 20px;
 }
 
-
 #reset {
+    font-family: 'Noto Serif SC', serif;
+    font-size: 18px;
     height: 55px;
     width: 100px;
     background: #eee;
+    font-weight: bold;
+    color: rgb(114, 114, 114);
     border: 0px;
     border-radius: 5px;
-    margin-top: 200px;
     box-shadow: 0 0 5px black;
     font-size: 20px;
     text-align: center;
+    margin-top: 50px;
     margin-bottom: 75px;
 }
 
