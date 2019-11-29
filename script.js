@@ -222,6 +222,7 @@ function init() {
 	handleSearchSubmit();
   getPoliticianId();
   handleReset();
+  $("#reset").hide();
 	$("#pick-rep").hide();
 	$("#rep-results-section").hide();
   $("#news-results-section").hide();

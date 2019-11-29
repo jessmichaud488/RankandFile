@@ -23,7 +23,6 @@
       real time voting records.</h2>
     <p class="api-info">Powered by ProPublica and News APIs</p>
     <label for="select-state><p class="begin-state">To begin, select your state:</p></label>
-    </header>
     <div class="dropdown">
       <form role="form" id="state-form">
             <select name="my-state" id="state-select" required>
@@ -79,11 +78,12 @@
                     <option value="WI">Wisconsin</option>
                     <option value="WY">Wyoming</option>
                 </select>
-                <button type="submit" id="rep-state-search">Submit</button>
+                    <button type="submit" id="rep-state-search" class="btn">
+                      <span>Submit</span>
+                    </button>
         </form>
     </div>
-
-
+    </header>
         <section id="pick-rep">
           <div class="rep" class="col-6">
             <h2>Choose a Representative</h2>
@@ -120,7 +120,7 @@
 
         <div class="newsfeed-header">
         <h2>Newsfeed</h2>
-        <img src="https://image.freepik.com/free-icon/news-in-a-speech-bubble-outline_318-38312.jpg" alt="News Logo" class="news-logo">
+        <img src="Images/news-icon.png" alt="News Logo" class="news-logo">
         <br>
         <section id="news-results-section">
         </section>

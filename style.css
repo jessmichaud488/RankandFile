@@ -13,7 +13,17 @@ main {
 
 header p.api-info {
     color: rgb(70, 130, 180);
-    font-size: 18px;
+    font-size: 24px;
+    text-shadow: 2px 2px 8px rgb(219, 219, 219);
+}
+
+label .begin-state {
+  font-size: 36px;
+}
+
+header h1 {
+  font-size: 64px;
+  text-shadow: 2px 2px 8px rgb(219, 219, 219);
 }
 
 header {
@@ -22,6 +32,7 @@ header {
     background-color: rgb(255, 255, 255, 0.8);
     display: inline-block;
     padding: 50px;
+    margin-top: 100px;
     margin-left: 10px;
     font-weight: bold;
     border-radius: 10px;
@@ -31,33 +42,61 @@ header {
     box-shadow: 0 0 5px rgb(207, 166, 4);
 }
 
+#state-form {
+  display: inline-block;
+}
+
 .dropdown {
   text-align: center;
-  margin: 50px;
+  margin: 50px 100px 50px 50px;
 }
 
 #state-select {
   font-family: 'Noto Serif SC', serif;
   font-weight: bold;
   color: rgb(114, 114, 114);
-  height: 55px;
-  width: 350px;
+  height: 65px;
+  width: 360px;
   border-radius: 5px;
   margin: 50px;
   box-shadow: 0 0 5px black;
+}
+
+.btn {
+  display: inline-block;
+  font-family: 'Noto Serif SC', serif;
+  color: rgb(114, 114, 114);
+  background: #eee;
+  font-size: 18px;
+  font-weight: bold;
+  height: 65px;
+  width: 110px;
+  cursor: pointer;
+  border: 1px solid rgb(207, 166, 4);
+  margin-top: 25px;
+  margin-left: 20px;
+  box-shadow: 0 0 5px black;
+  outline: none;
+  transition: 1s ease-in-out;
+}
+
+.btn:hover {
+  transition: 1s ease-in-out;
+  background: rgb(207, 166, 4, 0.4);
+  color: white;
 }
 
 #pick-rep {
     font-family: 'Noto Serif SC', serif;
     color: rgb(114, 114, 114);
     background-color: rgb(255, 255, 255, 0.8);
+    width: 935px;
     text-align: center;
     display: inline-block;
     padding: 50px;
-    margin: 10px 50px 50px 50px;
+    margin: 100px 50px 50px 50px;
     font-weight: bold;
     border-radius: 10px;
-    width: 80%;
     border-bottom: 2px rgb(207, 166, 4) solid;
     border-right: 2px rgb(207, 166, 4) solid;
     box-shadow: 0 0 5px rgb(207, 166, 4);
@@ -95,7 +134,7 @@ a {
     margin-top: 10px;
     font-weight: bold;
     border-radius: 10px;
-    width: 80%;
+    width: 935px;
     text-align: center;
     border-bottom: 2px rgb(207, 166, 4) solid;
     border-right: 2px rgb(207, 166, 4) solid;
@@ -109,8 +148,8 @@ a {
     display: inline-block;
     font-weight: bold;
     padding: 50px;
-    margin-top: 10px;
-    width: 80%;
+    margin-top: 100px;
+    width: 935px;
     border-radius: 10px;
     text-align: center;
     border-bottom: 2px rgb(207, 166, 4) solid;
@@ -134,23 +173,8 @@ a {
 
 .news-logo {
   margin: 10px;
-  height: 50px;
-  width: 50px;
-}
-
-#rep-state-search {
-    font-family: 'Noto Serif SC', serif;
-    font-size: 18px;
-    height: 55px;
-    width: 100px;
-    color: rgb(114, 114, 114);
-    font-weight: bold;
-    background: #eee;
-    border: 0px;
-    border-radius: 5px;
-    margin-top: 10px;
-    margin-right: 5px;
-    box-shadow: 0 0 5px black;
+  height: 80px;
+  width: 80px;
 }
 
 #reset {
@@ -171,6 +195,7 @@ a {
 }
 
 .icon {
+  margin-top: 100px;
   height: 35px;
   width: 35px;
 }
