@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
     <title>Rank and File</title>
     <link href="https://fonts.googleapis.com/css?family=Vollkorn&display=swap" rel="stylesheet">
@@ -14,6 +14,7 @@
     <link href="https://fonts.googleapis.com/css?family=Noto+Serif+SC" rel="stylesheet">
     <link href="style.css" rel="stylesheet" type="text/css"/>
     <link href="grid.css" rel="stylesheet" type="text/css"/>
+    <link href="media.css" rel="stylesheet" type="text/css"/>
   </head>
   <body class="body">
     <main role="main">
@@ -127,7 +128,7 @@
         </div>
 
         <div class="return-link-div row">
-            <button id="reset" href="index.html">Reset</button>
+            <button class="btn" id="reset" href="index.html">Reset</button>
         </div>
 
      </main>
@@ -138,12 +139,14 @@
   crossorigin="anonymous"></script>
   <script src="script.js"></script>
   </body>
-  <footer class="footer" role="contentinfo">
-  <a href="https://github.com/jessmichaud488" target="_blank"><img class=icon src="https://cdn4.iconfinder.com/data/icons/social-media-pro-icons/1080/Github-01-512.png" alt="github icon"></a>
+  <footer role="contentinfo">
+  <div id="footer-icons">
+  <a href="https://github.com/jessmichaud488" target="_blank"><img class="icon" src="https://cdn4.iconfinder.com/data/icons/social-media-pro-icons/1080/Github-01-512.png" alt="github icon"></a>
   
-  <a href="https://www.linkedin.com/in/jm488/" target="_blank"><img class=icon src="https://cdn4.iconfinder.com/data/icons/social-media-pro-icons/1080/Linkin-01-512.png" alt="linkedin icon"></a>
+  <a href="https://www.linkedin.com/in/jm488/" target="_blank"><img class="icon" src="https://cdn4.iconfinder.com/data/icons/social-media-pro-icons/1080/Linkin-01-512.png" alt="linkedin icon"></a>
   
-  <a href="mailto:jessmichaud488@gmail.com"><img class=icon src="https://cdn4.iconfinder.com/data/icons/social-media-pro-icons/1080/Mail-01-512.png" alt="email icon"></a>
+  <a href="mailto:jessmichaud488@gmail.com"><img class="icon" src="https://cdn4.iconfinder.com/data/icons/social-media-pro-icons/1080/Mail-01-512.png" alt="email icon"></a>
             <p>Created by Jessica Michaud</p>
+  </div>
   </footer>
 </html>
