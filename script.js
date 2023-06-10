@@ -55,6 +55,7 @@ function displayIndividualResults(individualArray) {
 <p>Phone Number: ${individualArray.results[0].roles[0].phone}</p>
 <p>Website: ${individualArray.results[0].url}</p>
 <p>Office Address:  ${individualArray.results[0].roles[0].office}, Washington, DC 20515</p>
+<p>Instagram: <a href="https://www.instagram.com/${individualArray.results[0].instagram_account}/" target="_blank">${individualArray.results[0].instagram_account}</a></p>
 <p>Facebook: <a href="https://www.facebook.com/${individualArray.results[0].facebook_account}/" target="_blank">${individualArray.results[0].facebook_account}</a></p>
 <p>Twitter: <a href="https://www.twitter.com/${individualArray.results[0].twitter_account}?lang=en" target="_blank">${individualArray.results[0].twitter_account}</a></p>
 <br>
