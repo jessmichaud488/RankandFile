@@ -67,8 +67,8 @@ function displayIndividualResults(individualArray) {
     `</p>
 <p>Bills Sponsored: ${individualArray.results[0].roles[0].bills_sponsored}</p>
 <p>Bills Co-Sponsored: ${individualArray.results[0].roles[0].bills_cosponsored}</p>
-<p>Missed Votes: ${individualArray.results[0].roles[0].bills_sponsored}</p>
-<p>Votes with Party Percentage: ${individualArray.results[0].roles[0].bills_cosponsored}</p>
+<p>Missed Votes: ${individualArray.results[0].roles[0].missed_votes}</p>
+<p>Votes with Party Percentage: ${individualArray.results[0].roles[0].votes_with_party_pct}</p>
 <p>Most Recent Vote: ${individualArray.results[0].most_recent_vote}</p>
 <p>End of Term: ${individualArray.results[0].roles[0].end_date}</p>
 <p>Profile Updated as of: ${individualArray.results[0].last_updated}</p>
