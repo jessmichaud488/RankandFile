@@ -176,10 +176,13 @@ function handleSearchSubmit() {
   $('#rep-state-search').on('click', function (event) {
     event.preventDefault();
 
-    let userState = $('#state-select').val();
+    let states = ['AL', 'AK', 'AZ', 'AR', 'CA', 'CO', 'CT', 'DE', 'FL', 'GA', 'HI', 'ID', 'IL', 'IN', 'IA', 'KS', 'KY', 'LA', 'ME', 'MD', 'MA', 'MI', 'MN', 'MS', 'MO', 'MT', 'NE', 'NV', 'NH', 'NJ', 'NM', 'NY', 'NC', 'ND', 'OH', 'OK', 'OR', 'PA', 'RI', 'SC', 'SD', 'TN', 'TX', 'UT', 'VT', 'VA', 'WA', 'WV', 'WI', 'WY', 'GU', 'PR'];
+
     $("#pick-rep").show();
-    getProPublicaFedHouse(userState);
-    getProPublicaFedSenate(userState);
+    for (let i = 0; i < states.length; i++) {
+      getProPublicaFedHouse(states[i]);
+      getProPublicaFedSenate(states[i]);
+    }
   });
 }
 
