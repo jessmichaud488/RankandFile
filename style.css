@@ -1,5 +1,5 @@
 html {
-  background: url("https://www.worldatlas.com/r/w1200/upload/99/b7/81/1024px-united-states-capitol-west-front.jpg") no-repeat center center fixed;
+  background: url("https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fpicsmine.com%2Fwp-content%2Fuploads%2F2016%2F11%2FCharming-Front-View-Of-United-States-Capitol-With-Green-and-sky-background.jpg&f=1&nofb=1&ipt=9f0193e3797f5bba443767e802f17c24815ad077be0455e2653993f96d9d0f2e&ipo=images") no-repeat center center fixed;
   -webkit-background-size: cover; 
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -28,18 +28,24 @@ header h1 {
 }
 
 header {
-  font-family: 'Noto Serif SC', serif;
+  animation: fadeIn 5s;
+  font-family: 'Spectral', serif;
   color: rgb(114, 114, 114);
   background-color: rgb(255, 255, 255, 0.8);
   display: inline-block;
   padding: 50px;
-  margin: 0 auto 20px auto;
+  margin: 0 auto;
   font-weight: bold;
   border-radius: 10px;
   text-align: center;
-  border-bottom: 2px rgb(207, 166, 4) solid;
-  border-right: 2px rgb(207, 166, 4) solid; 
-  box-shadow: 0 0 5px rgb(207, 166, 4);
+  border-bottom: 2px rgb(114, 114, 114) solid;
+  border-right: 2px rgb(114, 114, 114) solid; 
+  box-shadow: 0 0 5px rgb(114, 114, 114);
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
 }
 
 #state-form {
@@ -52,8 +58,10 @@ header {
 }
 
 #state-select {
-  font-family: 'Noto Serif SC', serif;
+  font-size: 22px;
+  font-family: 'Spectral', serif;
   font-weight: bold;
+  text-align: center;
   color: rgb(114, 114, 114);
   height: 65px;
   width: 360px;
@@ -64,16 +72,16 @@ header {
 
 .btn {
   display: inline-block;
-  font-family: 'Noto Serif SC', serif;
-  color: rgb(114, 114, 114);
-  background: #eee;
-  font-size: 18px;
+  font-family: 'Spectral', serif;
+  color: white;
+  background: #e5dd80;
+  font-size: 22px;
   font-weight: bold;
   border-radius: 5px;
   height: 65px;
   width: 110px;
   cursor: pointer;
-  border: 1px solid rgb(207, 166, 4);
+  border: 1px solid #e5dd80;
   margin-top: 25px;
   margin-left: 20px;
   box-shadow: 0 0 5px black;
@@ -83,36 +91,13 @@ header {
 
 .btn:hover {
   transition: 1s ease-in-out;
-  background: rgb(207, 166, 4, 0.4);
-  color: white;
-}
-
-#reset {
-  display: block;
-  font-family: 'Noto Serif SC', serif;
-  color: rgb(114, 114, 114);
-  background: #eee;
-  font-size: 18px;
-  font-weight: bold;
-  height: 65px;
-  width: 110px;
-  cursor: pointer;
-  border: 1px solid rgb(207, 166, 4);
-  box-shadow: 0 0 5px black;
-  border-radius: 5px;
-  outline: none;
-  transition: 1s ease-in-out;
-  margin: 0 auto;
-}
-
-#reset:hover {
-  transition: 1s ease-in-out;
-  background: rgb(207, 166, 4, 0.4);
-  color: white;
+  background: rgb(229, 221, 128);
+  color: grey;
+  box-shadow: 5 5 10px black;
 }
 
 #pick-rep {
-  font-family: 'Noto Serif SC', serif;
+  font-family: 'Spectral', serif;
   color: rgb(114, 114, 114);
   background-color: rgb(255, 255, 255, 0.8);
   width: 935px;
@@ -122,9 +107,9 @@ header {
   margin: 100px auto 50px;
   font-weight: bold;
   border-radius: 10px;
-  border-bottom: 2px rgb(207, 166, 4) solid;
-  border-right: 2px rgb(207, 166, 4) solid;
-  box-shadow: 0 0 5px rgb(207, 166, 4);
+  border-bottom: 2px rgb(114, 114, 114) solid;
+  border-right: 2px rgb(114, 114, 114) solid;
+  box-shadow: 0 0 5px rgb(114, 114, 114);
 }
 
 ul {
@@ -135,7 +120,7 @@ ul {
 a {
   list-style-type: none;
   text-decoration: none;
-  font-family: 'Noto Serif SC', serif;
+  font-family: 'Spectral', serif;
   color: rgb(70, 130, 180);
   font-weight: bold;
 }
@@ -151,23 +136,27 @@ a {
 }
 
 #rep-results-section {
-  font-family: 'Noto Serif SC', serif;
+  font-family: 'Spectral', serif;
   color: rgb(114, 114, 114);
   background-color: rgb(255, 255, 255, 0.8);
-  display: inline-block;
+  display: block;
   padding: 50px;
-  margin: 10px auto;
+  margin: 0 auto;
   font-weight: bold;
   border-radius: 10px;
   width: 935px;
   text-align: center;
-  border-bottom: 2px rgb(207, 166, 4) solid;
-  border-right: 2px rgb(207, 166, 4) solid;
-  box-shadow: 0 0 5px rgb(207, 166, 4);
+  border-bottom: 2px rgb(114, 114, 114) solid;
+  border-right: 2px rgb(114, 114, 114) solid;
+  box-shadow: 0 0 5px rgb(114, 114, 114);
+}
+
+#reset {
+  margin: 35px 650px;
 }
 
 .newsfeed-header {
-  font-family: 'Noto Serif SC', serif;
+  font-family: 'Spectral', serif;
   color: rgb(114, 114, 114);
   background-color: rgb(255, 255, 255, 0.8);
   display: inline-block;
@@ -177,13 +166,13 @@ a {
   width: 935px;
   border-radius: 10px;
   text-align: center;
-  border-bottom: 2px rgb(207, 166, 4) solid;
-  border-right: 2px rgb(207, 166, 4) solid;
-  box-shadow: 0 0 5px rgb(207, 166, 4); 
+  border-bottom: 2px rgb(114, 114, 114) solid;
+  border-right: 2px rgb(114, 114, 114) solid;
+  box-shadow: 0 0 5px rgb(114, 114, 114); 
 }
 
 #news-results-section {
-  font-family: 'Noto Serif SC', serif;
+  font-family: 'Spectral', serif;
   color: rgb(114, 114, 114);
   background-color: rgb(255, 255, 255, 0.0);
   display: inline-block;
@@ -201,15 +190,19 @@ a {
   width: 80px;
 }
 
-.icon {
-  margin-top: 100px;
-  height: 35px;
-  width: 35px;
+#footer ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style-type: none;
+  padding: 0;
+  margin-top: 55px;
+  line-height: 1em;
+  padding: 1.5em;
+  background: rgba(185, 186, 187, 0.25);
+  color: white;
 }
 
-footer p {
-  text-align: center;
-  font-family: 'Noto Serif SC', serif;
-  color: #eee;
-  font-weight: bold;
+#footer a {
+  color: white;
 }

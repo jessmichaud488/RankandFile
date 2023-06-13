@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
     <title>Rank and File</title>
+    <link href='https://fonts.googleapis.com/css?family=Spectral' rel='stylesheet'>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Vollkorn&display=swap" rel="stylesheet">
     <link rel="icon" href="favicon.ico" type="image/x-icon">
@@ -13,26 +15,27 @@
     <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
     <link rel="manifest" href="site.webmanifest">
     <link href="https://fonts.googleapis.com/css?family=Noto+Serif+SC" rel="stylesheet">
-    <link href="style.css" rel="stylesheet" type="text/css"/>
-    <link href="grid.css" rel="stylesheet" type="text/css"/>
-    <link href="media.css" rel="stylesheet" type="text/css"/>
-  </head>
-  <body class="body">
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link href="grid.css" rel="stylesheet" type="text/css" />
+    <link href="media.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body class="body">
     <main role="main">
-      <header class="header" role="banner">
-        <h1>Welcome to Rank and File!
-        </h1>
-        <h2>The app that lets you find your representative and their real-time voting records.
-        </h2>
-        <p class="api-info">Powered by ProPublica and News APIs
-        </p>
-        <label for="select-state">
+        <header class="header" role="banner">
+            <h1>Welcome to Rank and File!
+            </h1>
+            <h2>The app that lets you find your representative and their real-time voting records.
+            </h2>
+            <p class="api-info">Powered by ProPublica API
+            </p>
+            <label for="select-state">
           <p class="begin-state">To begin, select your state:
           </p>
         </label>
-        <div class="dropdown">
-          <form role="form" id="state-form">
-            <select name="my-state" id="state-select" required>
+            <div class="dropdown">
+                <form role="form" id="state-form">
+                    <select name="my-state" id="state-select" required>
               <option value="">Pick a state</option>
               <option value="AL">Alabama</option>
               <option value="AS">American Samoa</option>
@@ -56,7 +59,6 @@
               <option value="KY">Kentucky</option>
               <option value="LA">Louisiana</option>
               <option value="ME">Maine</option>
-              <option value="MH">Marshall Islands</option>
               <option value="MD">Maryland</option>
               <option value="MA">Massachusetts</option>
               <option value="MI">Michigan</option>
@@ -76,7 +78,6 @@
               <option value="OH">Ohio</option>
               <option value="OK">Oklahoma</option>
               <option value="OR">Oregon</option>
-              <option value="PW">Palau</option>
               <option value="PA">Pennsylvania</option>
               <option value="PR">Puerto Rico</option>
               <option value="RI">Rhode Island</option>
@@ -92,70 +93,62 @@
               <option value="WI">Wisconsin</option>
               <option value="WY">Wyoming</option>
             </select>
-            <button type="submit" id="rep-state-search" class="btn">
+                    <button type="submit" id="rep-state-search" class="btn">
               <span>Submit
               </span>
             </button>
-          </form>
-        </div>
-      </header>
-      <section id="pick-rep">
-        <div class="rep col-6">
-          <h2>Choose a Representative
-          </h2>
-          <div id="house">
-            <h3>House Members
-            </h3>
-            <ul id="house-members">
-            </ul>
-          </div>
-          <div id="senate">
-            <h3>Senate Members
-            </h3>
-            <ul id="senate-members">
-            </ul>
-          </div>
-        </div>
-      </section>
-      <section role="region" id="rep-results-section">
-        <div id="info-section">
-          <h2 id="pol-name">
-          </h2>
-          <div class="pol-info row">
-            <div id="img-party">
-              <div id="pol-image">
-              </div>
+                </form>
             </div>
-          </div>
-          <div id="contact-info">
-          </div>
-        </div>
-      </section>
-      <div class="newsfeed-header">
-        <h2>Newsfeed
-        </h2>
-        <img src="Images/news-icon.png" alt="News Logo" class="news-logo">
-        <br>
-        <section id="news-results-section">
+        </header>
+
+        <section id="pick-rep">
+            <div class="rep col-6">
+                <h2>Choose a Representative
+                </h2>
+                <div id="house">
+                    <h3>House Members
+                    </h3>
+                    <ul id="house-members">
+                    </ul>
+                </div>
+                <div id="senate">
+                    <h3>Senate Members
+                    </h3>
+                    <ul id="senate-members">
+                    </ul>
+                </div>
+            </div>
         </section>
-      </div>
-      <div class="return-link-div row">
-        <button class="btn" id="reset" href="index.html">Reset
+        
+        <section role="region" id="rep-results-section">
+            <div id="info-section">
+                <h2 id="pol-name">
+                </h2>
+                <div class="pol-info row">
+                    <div id="img-party">
+                        <div id="pol-image">
+                        </div>
+                    </div>
+                </div>
+                <div id="contact-info">
+                </div>
+            </div>
+        
+        <div class="return-link-div row">
+            <button class="btn hidden" id="reset" href="index.html">Reset
         </button>
-      </div>
+        </div>
     </main>
     <script src="script.js"></script>
-  </body>
-  <footer role="contentinfo">
-    <div id="footer-icons">
-      <a href="https://github.com/jessmichaud488" target="_blank">
-        <img class="icon" src="https://cdn4.iconfinder.com/data/icons/social-media-pro-icons/1080/Github-01-512.png" alt="github icon">
-      </a>
-      <a href="mailto:jessmichaud488@gmail.com">
-        <img class="icon" src="https://cdn4.iconfinder.com/data/icons/social-media-pro-icons/1080/Mail-01-512.png" alt="email icon">
-      </a>
-      <p>Created by Jessica Michaud
-      </p>
-    </div>
-  </footer>
+</body>
+<footer role="contentinfo" id="footer">
+    <ul>
+        <li>&copy;2023 Jessica Michaud</li>
+        <li></li>
+        <li><a href="#" class="icon brands fa-github"><span class="label">Github</span></a></li>
+        <li><a href="#" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+        <li><a href="#" class="icon brands fa-dribbble"><span class="label">Dribbble</span></a></li>
+    </ul>
+</footer>
+
 </html>
